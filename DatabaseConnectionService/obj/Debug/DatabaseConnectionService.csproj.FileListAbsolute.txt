@@ -1,0 +1,13 @@
+C:\Users\thiag\OneDrive\Área de Trabalho\DatabaseConnectionService\DatabaseConnectionService\DatabaseConnectionService\bin\Debug\DatabaseConnectionService.exe.config
+C:\Users\thiag\OneDrive\Área de Trabalho\DatabaseConnectionService\DatabaseConnectionService\DatabaseConnectionService\bin\Debug\DatabaseConnectionService.exe
+C:\Users\thiag\OneDrive\Área de Trabalho\DatabaseConnectionService\DatabaseConnectionService\DatabaseConnectionService\bin\Debug\DatabaseConnectionService.pdb
+C:\Users\thiag\OneDrive\Área de Trabalho\DatabaseConnectionService\DatabaseConnectionService\DatabaseConnectionService\obj\Debug\DatabaseConnectionService.csproj.AssemblyReference.cache
+C:\Users\thiag\OneDrive\Área de Trabalho\DatabaseConnectionService\DatabaseConnectionService\DatabaseConnectionService\obj\Debug\DatabaseConnectionService.csproj.SuggestedBindingRedirects.cache
+C:\Users\thiag\OneDrive\Área de Trabalho\DatabaseConnectionService\DatabaseConnectionService\DatabaseConnectionService\obj\Debug\DatabaseConnectionService.csproj.CoreCompileInputs.cache
+C:\Users\thiag\OneDrive\Área de Trabalho\DatabaseConnectionService\DatabaseConnectionService\DatabaseConnectionService\obj\Debug\DatabaseConnectionService.exe
+C:\Users\thiag\OneDrive\Área de Trabalho\DatabaseConnectionService\DatabaseConnectionService\DatabaseConnectionService\obj\Debug\DatabaseConnectionService.pdb
+C:\Users\thiag\OneDrive\Área de Trabalho\DatabaseConnectionService\DatabaseConnectionService\DatabaseConnectionService\bin\Debug\Newtonsoft.Json.dll
+C:\Users\thiag\OneDrive\Área de Trabalho\DatabaseConnectionService\DatabaseConnectionService\DatabaseConnectionService\bin\Debug\Topshelf.dll
+C:\Users\thiag\OneDrive\Área de Trabalho\DatabaseConnectionService\DatabaseConnectionService\DatabaseConnectionService\bin\Debug\Newtonsoft.Json.xml
+C:\Users\thiag\OneDrive\Área de Trabalho\DatabaseConnectionService\DatabaseConnectionService\DatabaseConnectionService\bin\Debug\Topshelf.xml
+C:\Users\thiag\OneDrive\Área de Trabalho\DatabaseConnectionService\DatabaseConnectionService\DatabaseConnectionService\obj\Debug\DatabaseConnectionService.csproj.CopyComplete
