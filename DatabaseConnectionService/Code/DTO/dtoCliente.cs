@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace DatabaseConnectionService.Code.DTO
 {
-    internal class dtoCliente
+    public class dtoCliente
     {
         public string nome { get; set; }
         public string celular { get; set; }

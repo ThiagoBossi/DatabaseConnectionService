@@ -1,9 +1,10 @@
 ﻿using DatabaseConnectionService.Code.DAL;
 using DatabaseConnectionService.Code.DTO;
-using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Timers;
+using System.Text.Json;
 
 namespace DatabaseConnectionService.Code.Services
 {
@@ -30,25 +31,29 @@ namespace DatabaseConnectionService.Code.Services
                 return;
             }
 
-            var jsonData = File.ReadAllText(jsonPath);
-            var clientes = JsonConvert.DeserializeObject<dtoCliente>(jsonData);
+            string jsonData = File.ReadAllText(jsonPath);
+            var listaClientes = JsonSerializer.Deserialize<List<dtoCliente>>(jsonData);
 
-            var dalCliente = new dalCliente();
-            if (dalCliente.verificarCpfExistente(clientes.cpf))
+            foreach (var item in listaClientes)
             {
-                File.Delete(jsonPath);
-                _timer.Start();
-                Console.WriteLine("Registro já existente... Removendo arquivo.");
-                return;
+                var dalCliente = new dalCliente();
+                if (dalCliente.verificarCpfExistente(item.cpf))
+                {
+                    _timer.Start();
+                    Console.WriteLine("Registro já existente... Ignorando dados.");
+                }
+                else
+                {
+                    if (dalCliente.inserirRegistro(item))
+                    {
+                        Console.WriteLine("Registro inserido com sucesso! Realizando nova pesquisa em 5 segundos.");
+                    }
+
+                    _timer.Start();
+                }
             }
 
-            if (dalCliente.inserirRegistro(clientes))
-            {
-                Console.WriteLine("Registro inserido com sucesso! Realizando nova pesquisa em 5 segundos.");
-                File.Delete(jsonPath);
-            }
-
-            _timer.Start();
+            File.Delete(jsonPath);
         }
 
         public void iniciarTimer()
